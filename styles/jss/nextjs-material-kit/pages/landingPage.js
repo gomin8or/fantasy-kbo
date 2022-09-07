@@ -56,6 +56,9 @@ const landingPageStyle = {
     zIndex: 1101,
     overflow: "scroll"
   },
+  table: {
+    width: "100%"
+  }
 };
 
 export default landingPageStyle;

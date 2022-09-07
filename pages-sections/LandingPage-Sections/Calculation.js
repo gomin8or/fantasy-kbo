@@ -16,8 +16,163 @@ import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 const useStyles = makeStyles(styles);
 
-export default function SectionPills() {
+export default function Calculation() {
     const classes = useStyles();
+
+    const renderTeams = ( data ) => {
+        return (
+            <div className={ classes.table }>
+                <GridContainer>
+                    <GridItem xs={1}>
+                        <span className={classes.rankLabel}>1</span>
+                        <span className={classes.gmNameLabel}>구지봉</span>
+                        <span className={classes.gmPointLabel}>135.00</span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <p className={classes.playerPositionLabel}>SP</p>
+                        <p className={classes.playerNameLabel}>스트레일리</p>
+                        <p className={classes.playerPointLabel}>19.00</p>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <p className={classes.playerPositionLabel}>SP</p>
+                        <p className={classes.playerNameLabel}>스트레일리</p>
+                        <p className={classes.playerPointLabel}>19.00</p>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <p className={classes.playerPositionLabel}>SP</p>
+                        <p className={classes.playerNameLabel}>스트레일리</p>
+                        <p className={classes.playerPointLabel}>19.00</p>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <p className={classes.playerPositionLabel}>SP</p>
+                        <p className={classes.playerNameLabel}>스트레일리</p>
+                        <p className={classes.playerPointLabel}>19.00</p>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <p className={classes.playerPositionLabel}>SP</p>
+                        <p className={classes.playerNameLabel}>스트레일리</p>
+                        <p className={classes.playerPointLabel}>19.00</p>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <p className={classes.playerPositionLabel}>SP</p>
+                        <p className={classes.playerNameLabel}>스트레일리</p>
+                        <p className={classes.playerPointLabel}>19.00</p>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <p className={classes.playerPositionLabel}>SP</p>
+                        <p className={classes.playerNameLabel}>스트레일리</p>
+                        <p className={classes.playerPointLabel}>19.00</p>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <p className={classes.playerPositionLabel}>SP</p>
+                        <p className={classes.playerNameLabel}>스트레일리</p>
+                        <p className={classes.playerPointLabel}>19.00</p>
+                    </GridItem>
+                </GridContainer>
+
+
+            </div>
+
+        )
+    }
+
+    const renderPlayers = ( data ) => {
+        return (
+            <div className={ classes.table }>
+                <GridContainer>
+                    <GridItem xs={1}>
+                        <span className={classes.rankLabel}>1</span>
+                        <span className={classes.gmNameLabel}>구지봉</span>
+                        <span className={classes.gmPointLabel}>135.00</span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>ea</p>
+                            <p className={classes.playerPointLabel}>2</p>
+                        </span>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>points</p>
+                            <p className={classes.playerPointLabel}>19.00</p>
+                        </span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>ea</p>
+                            <p className={classes.playerPointLabel}>2</p>
+                        </span>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>points</p>
+                            <p className={classes.playerPointLabel}>19.00</p>
+                        </span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>ea</p>
+                            <p className={classes.playerPointLabel}>2</p>
+                        </span>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>points</p>
+                            <p className={classes.playerPointLabel}>19.00</p>
+                        </span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>ea</p>
+                            <p className={classes.playerPointLabel}>2</p>
+                        </span>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>points</p>
+                            <p className={classes.playerPointLabel}>19.00</p>
+                        </span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>ea</p>
+                            <p className={classes.playerPointLabel}>2</p>
+                        </span>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>points</p>
+                            <p className={classes.playerPointLabel}>19.00</p>
+                        </span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>ea</p>
+                            <p className={classes.playerPointLabel}>2</p>
+                        </span>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>points</p>
+                            <p className={classes.playerPointLabel}>19.00</p>
+                        </span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>ea</p>
+                            <p className={classes.playerPointLabel}>2</p>
+                        </span>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>points</p>
+                            <p className={classes.playerPointLabel}>19.00</p>
+                        </span>
+                    </GridItem>
+                    <GridItem xs={1}>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>ea</p>
+                            <p className={classes.playerPointLabel}>2</p>
+                        </span>
+                        <span className={classes.playerPointWrapper}>
+                            <p className={classes.playerPositionLabel}>points</p>
+                            <p className={classes.playerPointLabel}>19.00</p>
+                        </span>
+                    </GridItem>
+                </GridContainer>
+
+
+            </div>
+
+        )
+    }
+
     return (
         <div className={classes.section}>
             <GridContainer justify="center">
@@ -38,86 +193,17 @@ export default function SectionPills() {
                                     {
                                         tabButton: "Teams",
                                         tabIcon: Dashboard,
-                                        tabContent: (
-                                            <span>
-                                                <p>
-                                                    Player 1
-                                                </p>
-                                                <br />
-                                                <p>
-                                                    Player 2
-                                                </p>
-                                                <br />
-                                                <p>
-                                                    Player 3
-                                                </p>
-                                                <br />
-                                                <p>
-                                                    Player 4
-                                                </p>
-                                                <br />
-                                                <p>
-                                                    Player 5
-                                                </p>
-                                                <br />
-                                            </span>
-                                        )
+                                        tabContent: renderTeams()
                                     },
                                     {
                                         tabButton: "Pitchers",
                                         tabIcon: Schedule,
-                                        tabContent: (
-                                        <span>
-                                            <p>
-                                                Player 1
-                                            </p>
-                                            <br />
-                                            <p>
-                                                Player 2
-                                            </p>
-                                            <br />
-                                            <p>
-                                                Player 3
-                                            </p>
-                                            <br />
-                                            <p>
-                                                Player 4
-                                            </p>
-                                            <br />
-                                            <p>
-                                                Player 5
-                                            </p>
-                                            <br />
-                                        </span>
-                                        )
+                                        tabContent: renderPlayers()
                                     },
                                     {
                                         tabButton: "Batters",
                                         tabIcon: List,
-                                        tabContent: (
-                                            <span>
-                                                <p>
-                                                    Player 1
-                                                </p>
-                                                <br />
-                                                <p>
-                                                    Player 2
-                                                </p>
-                                                <br />
-                                                <p>
-                                                    Player 3
-                                                </p>
-                                                <br />
-                                                <p>
-                                                    Player 4
-                                                </p>
-                                                <br />
-                                                <p>
-                                                    Player 5
-                                                </p>
-                                                <br />
-                                            </span>
-                                        )
+                                        tabContent: renderPlayers()
                                     }
                                 ]}
                             />
