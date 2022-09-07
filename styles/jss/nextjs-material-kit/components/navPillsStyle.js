@@ -2,6 +2,7 @@ import {
   hexToRGBAlpha,
   roseColor,
   primaryColor,
+  secondaryColor,
   infoColor,
   successColor,
   warningColor,
@@ -25,8 +26,9 @@ const navPillsStyle = (theme) => ({
   flexContainer: {
     [theme.breakpoints.down("xs")]: {
       display: "flex",
-      flexWrap: "wrap"
-    }
+      flexWrap: "wrap",
+    },
+    justifyContent: "center",
   },
   displayNone: {
     display: "none !important"
@@ -80,6 +82,16 @@ const navPillsStyle = (theme) => ({
       backgroundColor: primaryColor,
       boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
         primaryColor,
+        0.4
+      )}`
+    }
+  },
+  secondary: {
+    "&,&:hover": {
+      color: "#FFFFFF",
+      backgroundColor: secondaryColor,
+      boxShadow: `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px ${hexToRGBAlpha(
+        secondaryColor,
         0.4
       )}`
     }

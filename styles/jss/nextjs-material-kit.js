@@ -1,23 +1,3 @@
-/*!
-
- =========================================================
- * NextJS Material Kit - v1.2.0 based on Material Kit - v2.0.2 and Material Kit React - v1.8.0
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/nextjs-material-kit
- * Copyright 2021 Creative Tim (https://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/nextjs-material-kit/blob/main/LICENSE.md)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
-// ##############################
-// // // Variables - Styles that are used on more than one component
-// #############################
-
 const hexColorToRGB = function (hexColor) {
   let detectShorthand = /^#?([a-f\d])([a-f\d])([a-f\d])$/i; // #000 vs #000000
   hexColor = hexColor.replace(detectShorthand, function (m, r, g, b) {
@@ -90,7 +70,8 @@ const defaultFont = {
   lineHeight: "1.5em",
 };
 
-const primaryColor = "#9c27b0";
+const primaryColor = "#f15a24";
+const secondaryColor = "#30A503";
 const warningColor = "#ff9800";
 const dangerColor = "#f44336";
 const successColor = "#4caf50";
@@ -238,6 +219,7 @@ export {
   card,
   defaultFont,
   primaryColor,
+  secondaryColor,
   warningColor,
   dangerColor,
   successColor,

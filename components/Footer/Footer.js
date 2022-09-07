@@ -29,7 +29,7 @@ export default function Footer(props) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
+        {/* <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
@@ -68,18 +68,18 @@ export default function Footer(props) {
               </a>
             </ListItem>
           </List>
-        </div>
+        </div> */}
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://www.creative-tim.com?ref=njsmk-footer"
+            href=""
             className={aClasses}
             target="_blank"
           >
-            Creative Tim
+            D. Smiths
           </a>{" "}
-          for a better web.
+          for a better sports.
         </div>
       </div>
     </footer>
