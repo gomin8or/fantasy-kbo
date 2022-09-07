@@ -12,7 +12,8 @@ const style = {
     border: "0",
     display: "flex",
     alignItems: "center",
-    backgroundImage: "url('/img/sign.jpg')"
+    backgroundColor: "rgba(0,0,0,.8)"
+    // backgroundImage: "url('/img/sign.jpg')"
   },
   container,
   form: {

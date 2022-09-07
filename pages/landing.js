@@ -27,12 +27,31 @@ const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
+  const [modalVisibility, setModalVisibility] = React.useState({ visibility: "hidden" });
   const classes = useStyles();
   const { ...rest } = props;
+
+  const openModal = () => {
+    setModalVisibility({});
+  }
+  const closeModal = () => {
+    setModalVisibility({ visibility: "hidden" });
+  }
+
   return (
     <div>
-      <div className={classes.modal}>
-          <Submit />
+      <div className={classes.modal} style={modalVisibility}
+        onClick={ () => closeModal() }
+      >
+        <Button
+          color="transparent"
+          size="lg"
+          onClick={() => closeModal()}
+          style={{ color: "#fff", position: "fixed" }}
+        >
+          Close
+        </Button>
+        <Submit />
       </div>
       <Header
         color="transparent"
@@ -58,9 +77,7 @@ export default function LandingPage(props) {
               <Button
                 color="primary"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => openModal()}
               >
                 {/* <i className="fas fa-play" /> */}
                 Submit Roster
