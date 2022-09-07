@@ -1,3 +1,4 @@
+import { hexToRGBAlpha } from "../../nextjs-material-kit";
 import { container, title } from "/styles/jss/nextjs-material-kit.js";
 
 const landingPageStyle = {
@@ -46,7 +47,15 @@ const landingPageStyle = {
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
-  }
+  },
+
+  modal: {
+    position: "fixed",
+    left: 0, top: 0,
+    width: "100vw", height: "100vh",
+    zIndex: 1101,
+    overflow: "scroll"
+  },
 };
 
 export default landingPageStyle;

@@ -20,6 +20,7 @@ import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
 // Sections for this page
 import Calculation from "../pages-sections/LandingPage-Sections/Calculation";
 import PointSystem from "../pages-sections/LandingPage-Sections/PointSystem";
+import Submit from "../pages-sections/LandingPage-Sections/Submit";
 
 const dashboardRoutes = [];
 
@@ -30,6 +31,9 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div>
+      <div className={classes.modal}>
+          <Submit />
+      </div>
       <Header
         color="transparent"
         routes={dashboardRoutes}
